@@ -1,0 +1,261 @@
+﻿/* sin margen ni relleno de inicio */
+*{
+	padding: 0px;
+	margin: 0px;
+	
+}
+
+/* estilo de etiqueta de titulos */
+h1{
+	font: bold 50px;
+	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+	color:maroon;
+	text-align: center;
+	text-shadow: rgb(100,100,100) 5px 5px 5px;
+	letter-spacing: 3px;
+	font-size: 50px;
+}
+h2{
+	font-family:"Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+	color:#00FFFF;
+	text-align:center;
+	text-shadow: rgb(80,90,100) 3px 3px 3px;
+	letter-spacing:2px;
+	font-size:30px;
+}
+
+h3{
+	font-family:"Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	color:#66FF99;
+	text-align:center;
+	text-shadow: rgb(80,90,100) 3px 3px 3px;
+	letter-spacing:2px;
+	font-size:20px;
+}
+
+h4{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	color:#CCFF33;
+	text-align:center;
+	text-shadow: rgb(80,90,100) 3px 3px 3px; 
+	letter-spacing:2px;
+	font-size:20px;
+	
+}
+
+/*etiquetas html*/;
+head,header,body,section,nav,aside,article,figure,figcaption,hgroup,footer{
+	display:block;
+
+}
+
+/*alineacion y fondo de body*/
+body{
+
+	background: linear-gradient(276deg, hsl(0, 17%, 34%) 4%, hsl(350, 100%, 50%) 24%, hsl(270, 100%, 50%) 48%, hsl(128, 100%, 50%) 70%, hsl(57, 16%, 34%) 92%);
+
+}
+
+/*cabezera de pagina*/
+#cabezeralogo{
+	border:2px #993333 solid;
+	background: radial-gradient(hsl(240, 100%, 50%) 8%, hsl(80, 100%, 50%) 48%, hsl(21, 100%, 50%) 90%);
+}
+.imagenes-contenedor{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height:20vh;
+}
+.imagenes-contenedor .imagen{
+	position:relative;
+	margin-right: -20px;
+	display:inline-flex;
+	flex-direction: column;
+}
+
+.imagenes-contenedor .imagen img{
+	width:150px;
+	height:150px;
+	transition: transform 0.39seg ease-in-out;
+	
+}
+
+.imagenes-contenedor .imagen .nombre{
+	position:absolute;
+	background-color:black;
+	border-radius: 5px;
+	color:white;
+	display:none;
+	min-width:100px;
+	width:150px;
+	top:-70px
+	padding:  10px 15px;
+}
+
+.imagenes-contenedor .imagen .nombre .text{
+	 display:inline-block;
+	 text-overflow: ellipsis;
+	 overflow:hidden;
+	 white-space:nowrap;
+	 margin. 0 auto;
+	 width:150px;
+	 text-align:center;
+	 box-sizing: border-box;
+	 
+}
+
+.imagenes-contenedor .imagen:hover .nombre{
+	display:inline-block;
+	transform: translateY(-20px)
+	
+}
+
+.imagenes-contenedor .imagen .nombre::before{
+	content:"";
+	position:absolute;
+	width:1px;
+	height:1px;
+	left:40%;
+	bottom:-20px;
+	border-top:10px solid black;
+	border-left:10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	
+}
+
+.imagenes-contenedor .imagen:hover img{
+	transform: translateY(-20px);
+	
+}
+
+/* mediaqury */
+@media (max-width: 680px){
+	.imagenes-contenedor{
+	flex-direction: column;
+	height: 170vh;
+	
+}
+}
+
+
+/* estilos de contenedor div 1 */
+.imagenes-body{
+	display:inline-block;
+	justify-content: left;
+	align-items: left;
+	height:20pt;
+	
+}
+
+.imagenes-body .foto{
+	position: relative;
+	margin-right: -6px;
+	display: inline-block;
+	flex-direction: column;
+	border: 3px #FF0000 solid;
+}
+
+.imagenes-body .foto img{
+	border: #FFFF00;
+	width: 220px;
+	height: 245px;
+	transition: transform 0.39seg ease-in-out;
+}
+ 
+ @media (max-width: 680px){
+	.imagenes-body{
+	flex-direction: column;
+	height: 150vh;
+	
+	
+}
+}
+
+
+/* estilos de contenedores div. 2 */
+.imagenes-horizontal{
+	display:inline-block;
+	justify-content:left;
+	align-items: left;
+	height:20pt;
+	
+}
+
+.imagenes-horizontal .fila{
+	position: relative;
+	margin-right: -6px;
+	display: inline-block;
+	flex-direction: column;
+	border: 3px #00FFFF solid;
+}
+
+.imagenes-horizontal .fila img{
+	width:265px;
+	height:200px;
+	transition: transform 0.39seg ease-in-out;
+}
+
+@media (max-widht: 680px){
+      .imagenes-horizontal{
+	flex-direction: column;
+	height:150vh;
+	
+}	
+}
+
+/* stilo de section pie */
+#pie{
+	flex: 1;
+	clear: both;
+	text-align:center;
+	padding:20px;
+	border-top:20px;
+}
+
+#pielogo{
+	display:flex;
+	justify-content: center;
+	width: 96%;
+	padding:2%;
+	background-color: #00CC99;
+}
+
+#pielogo > div{
+	display:flex;
+	flex: 1;
+	max-width: 960px;
+	background-color: #996633;
+	border-radius: 10px;
+}
+
+.seccionpie{
+	flex: 1;
+	padding:3%;
+	
+}
+
+.seccionpie h1{
+	font:bold 20px arial,sans serif;
+}
+ 
+.seccionpie p{
+	margin-top: 5px;
+}
+
+.seccionpie a{
+	font:bold 16px arial, sans serif;
+	color:#009933;
+	text-decoration: none;
+}
+
+.seccionpie img{
+	width:30px;
+	height:30px;
+}
+	
+
+
+
+
