@@ -61,6 +61,14 @@ body{
 	border:2px #993333 solid;
 	background: radial-gradient(hsl(240, 100%, 50%) 8%, hsl(80, 100%, 50%) 48%, hsl(21, 100%, 50%) 90%);
 }
+/* mediaqury */
+@media (max-width: 680px){
+	#cabezeralogo{
+	flex-direction: column;
+	height: 850px;
+	
+}
+}
 .imagenes-contenedor{
 	display: flex;
 	justify-content: center;
@@ -134,7 +142,7 @@ body{
 @media (max-width: 680px){
 	.imagenes-contenedor{
 	flex-direction: column;
-	height: 170vh;
+	height: 80vh;
 	
 }
 }
