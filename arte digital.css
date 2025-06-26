@@ -171,15 +171,7 @@ body{
 	height: 245px;
 	transition: transform 0.39seg ease-in-out;
 }
- 
- @media (max-width: 680px){
-	.imagenes-body{
-	flex-direction: column;
-	height: 150vh;
-	
-	
-}
-}
+
 
 
 /* estilos de contenedores div. 2 */
@@ -205,56 +197,8 @@ body{
 	transition: transform 0.39seg ease-in-out;
 }
 
-@media (max-widht: 680px){
-      .imagenes-horizontal{
-	flex-direction: column;
-	height:150vh;
-	
-}	
-}
-
- .iframe-container {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%; /* Relación 16:9 */
-    height: 0;
-    overflow: hidden;
-    border-radius: 12px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
-    border: 4px solid #2196F3;
-  }
-
-.iframe-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-    border-radius: 12px;
-  }
-
-  .iframe-responsive {
-  position: relative;
-  width: 100%;
-  max-width: 500px; /* Puedes ajustarlo si quieres limitar el tamaño máximo */
-  padding-bottom: 112%; /* Altura aproximada según el iframe original: 560/500 = 1.12 */
-  height: 0;
-  overflow: hidden;
-  margin: auto;
-}
-
-.iframe-responsive iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-}
 
 
- 
 
 /* stilo de section pie */
 #pie{
