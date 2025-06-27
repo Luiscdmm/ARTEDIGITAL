@@ -214,7 +214,7 @@ body{
 }
 
   .iframe-responsive {
-  position: relative;
+  position: absolute;
   width: 100%;
   max-width: 500px; /* Puedes ajustarlo si quieres limitar el tamaño máximo */
   padding-bottom: 112%; /* Altura aproximada según el iframe original: 560/500 = 1.12 */
