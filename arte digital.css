@@ -171,7 +171,15 @@ body{
 	height: 245px;
 	transition: transform 0.39seg ease-in-out;
 }
-
+ 
+ @media (max-width: 680px){
+	.imagenes-body{
+	flex-direction: column;
+	height: 150vh;
+	
+	
+}
+}
 
 
 /* estilos de contenedores div. 2 */
@@ -197,8 +205,37 @@ body{
 	transition: transform 0.39seg ease-in-out;
 }
 
+@media (max-widht: 680px){
+      .imagenes-horizontal{
+	flex-direction: column;
+	height:150vh;
+	
+}	
+}
+
+  .iframe-responsive {
+  position: relative;
+  width: 100%;
+  max-width: 500px; /* Puedes ajustarlo si quieres limitar el tamaño máximo */
+  padding-bottom: 112%; /* Altura aproximada según el iframe original: 560/500 = 1.12 */
+  height: 0;
+  overflow: hidden;
+  margin: auto;
+}
+
+.iframe-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 
+
+
+
+ 
 
 /* stilo de section pie */
 #pie{
