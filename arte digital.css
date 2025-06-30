@@ -227,7 +227,7 @@ body{
 /* Para navegadores que no soportan aspect-ratio */
 @media (max-width: 680px) {
   .video-responsive {
-    position: absolute;
+    position: relative;
     padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
