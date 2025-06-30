@@ -214,7 +214,7 @@ body{
 }
 
 /* Responsive YouTube iframe solo en pantallas pequeñas */
-@media (max-width: 680px) {
+@media (max-width: 700px) {
   .video-responsive {
     width: 100% !important;
     height: auto !important;
@@ -225,7 +225,7 @@ body{
   }
 }
 /* Para navegadores que no soportan aspect-ratio */
-@media (max-width: 680px) {
+@media (max-width: 700px) {
   .video-responsive {
     position: relative;
     padding-bottom: 56.25%;
