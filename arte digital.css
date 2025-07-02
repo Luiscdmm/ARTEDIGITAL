@@ -213,7 +213,7 @@ body{
 }	
 }
 
- .iframe-row {
+.iframe-row {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -223,9 +223,7 @@ body{
 }
 
 .iframe-container {
-  display: flex;
-  position: relative;
-  width: 100%;
+  flex: 1 1 350px;
   max-width: 500px;
   min-width: 260px;
   margin: 0 auto;
@@ -233,21 +231,30 @@ body{
   overflow: hidden;
   background: #000;
   box-sizing: border-box;
-}
-
-.iframe-container.youtube {
+  /* Modern browsers: aspect-ratio */
   aspect-ratio: 16 / 9;
-  height: auto;
+  position: relative;
 }
 
 .iframe-container.facebook {
-  aspect-ratio: 500 / 560;
-  height: auto;
+  aspect-ratio: 500 / 560; /* Facebook post */
 }
 
-.iframe-container iframe {
+/* Fallback para navegadores sin aspect-ratio */
+.aspect-ratio-fallback {
   width: 100%;
-  height: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* YouTube: 16/9 ratio */
+  position: relative;
+  background: #000;
+}
+.iframe-container.facebook .aspect-ratio-fallback {
+  padding-bottom: 112%; /* Facebook: 560/500 = 1.12 */
+}
+.aspect-ratio-fallback iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
   border: none;
   display: block;
   background: #000;
@@ -266,6 +273,11 @@ body{
     margin: 0 auto;
   }
 }
+ 
+
+ 
+
+
 
 
 
