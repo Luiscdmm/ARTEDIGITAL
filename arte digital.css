@@ -236,7 +236,7 @@ body{
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 600px) {
   .fb-responsive-wrapper {
     position: relative;
     width: 100%;
