@@ -242,6 +242,9 @@ body{
   position: relative;
   background: #000;
 }
+.iframe-container.facebook .aspect-ratio-fallback {
+  padding-bottom: 112%; /* Facebook: 560/500 = 1.12 */
+}
 
 .iframe-container.youtube {
   aspect-ratio: 16 / 9;
@@ -268,7 +271,7 @@ body{
     gap: 20px;
     align-items: stretch;
   }
-  
+
   .iframe-container.facebook {
   aspect-ratio: 500 / 599;
   height: auto;
