@@ -237,7 +237,7 @@ body{
 }
 
 .iframe-container.facebook {
-  aspect-ratio: 500 / 580; /* Facebook post */
+  aspect-ratio: 500 / 560; /* Facebook post */
 }
 
 /* Fallback para navegadores sin aspect-ratio */
