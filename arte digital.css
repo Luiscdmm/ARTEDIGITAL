@@ -268,16 +268,19 @@ body{
     gap: 20px;
     align-items: stretch;
   }
+  
+  .iframe-container.facebook {
+  aspect-ratio: 500 / 599;
+  height: auto;
+}
+
   .iframe-container {
     max-width: 98vw;
     min-width: 0;
     margin: 0 auto;
   }
 }
-.iframe-container.facebook {
-  aspect-ratio: 500 / 599;
-  height: auto;
-}
+
 
   
 
