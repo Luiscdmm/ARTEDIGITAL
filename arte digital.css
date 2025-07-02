@@ -236,6 +236,23 @@ body{
   }
 }
 
+@media (max-width: 900px) {
+  .fb-responsive-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 112%; /* 560/500 = 1.12 */
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  .fb-responsive-wrapper iframe {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+}
 
 
 
