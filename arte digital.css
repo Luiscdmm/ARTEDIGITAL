@@ -254,14 +254,14 @@ body{
 }
 
 /* Responsivo para móvil */
-@media (max-width: 900px) {
+@media (max-width: 800px) {
   .iframe-row {
     flex-direction: column;
     gap: 20px;
     align-items: stretch;
   }
   .iframe-container {
-    max-width: 98vw;
+    max-width: 99vw;
     min-width: 0;
     margin: 0 auto;
   }
