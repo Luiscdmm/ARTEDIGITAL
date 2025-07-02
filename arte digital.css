@@ -232,7 +232,7 @@ body{
   background: #000;
   box-sizing: border-box;
   /* Modern browsers: aspect-ratio */
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 16 / 8;
   position: relative;
 }
 
