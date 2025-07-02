@@ -249,7 +249,7 @@ body{
 }
 
 .iframe-container.facebook {
-  aspect-ratio: 500 / 590;
+  aspect-ratio: 500 / 560;
   height: auto;
 }
 
@@ -274,7 +274,10 @@ body{
     margin: 0 auto;
   }
 }
-
+.iframe-container.facebook {
+  aspect-ratio: 500 / 599;
+  height: auto;
+}
 
   
 
