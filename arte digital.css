@@ -236,7 +236,28 @@ body{
   }
 }
 
+.fb-responsive {
+  width: 100%;
+  max-width: 500px;    /* Limita el ancho máximo igual que el width del iframe */
+  margin: 0 auto 20px auto; /* Centrado y separación abajo */
+  /* Para mantener la relación de aspecto del iframe */
+  position: relative;
+  aspect-ratio: 500 / 560;
+}
 
+.fb-responsive iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .fb-responsive {
+    max-width: 100vw;
+    aspect-ratio: 9 / 16; /* Más vertical, como se ve en teléfonos */
+  }
+}
 
 
 
