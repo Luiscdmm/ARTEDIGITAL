@@ -213,8 +213,7 @@ body{
 }	
 }
 
- 
-.iframe-row {
+ .iframe-row {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -222,8 +221,10 @@ body{
   margin: 30px 0;
   flex-wrap: wrap;
 }
-.youtube-responsive,
-.facebook-responsive {
+
+.iframe-container {
+  display: flex;
+  position: relative;
   width: 100%;
   max-width: 500px;
   min-width: 260px;
@@ -232,46 +233,39 @@ body{
   overflow: hidden;
   background: #000;
   box-sizing: border-box;
-  position: relative;
 }
-.youtube-responsive {
+
+.iframe-container.youtube {
   aspect-ratio: 16 / 9;
-  /* Fallback para navegadores viejos */
-  height: 0;
-  padding-bottom: 56.25%;
+  height: auto;
 }
-.facebook-responsive {
+
+.iframe-container.facebook {
   aspect-ratio: 500 / 560;
-  /* Fallback para navegadores viejos */
-  height: 0;
-  padding-bottom: 112%;
+  height: auto;
 }
-.youtube-responsive iframe,
-.facebook-responsive iframe {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
+
+.iframe-container iframe {
+  width: 100%;
+  height: 100%;
   border: none;
   display: block;
   background: #000;
 }
+
+/* Responsivo para móvil */
 @media (max-width: 900px) {
   .iframe-row {
     flex-direction: column;
     gap: 20px;
     align-items: stretch;
   }
-  .youtube-responsive,
-  .facebook-responsive {
+  .iframe-container {
     max-width: 98vw;
     min-width: 0;
     margin: 0 auto;
   }
 }
- 
-
-
-
 
 
 
